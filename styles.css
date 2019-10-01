@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(48, 51, 53);
+  background-color: #EAEDF0;
+  font-family: "Exo2", "Cambria", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-header {
+  text-align: center;
+  background-color: rgb(37, 245, 18);
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  
+  width: 80%;
+  margin: 40px 0;
+  padding: 50px;
+}
+
+.about-me-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 3px;
+  width: 90%;
+  margin: 0 0 40px 0;
+}
+
+.about-me {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 80%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
+
+.section {
+  padding: 4em 1em;
+  line-height: 1.2em;
+  margin: 0 auto;
+  max-width: 540px;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: .7em;  
+}
+
+.section--early-life {  
+  font-size: 20px;  
+}
+
+.section--marine-corps {
+  border-top: 1px solid black;
+  font-size: 20px;  
+}
+
+.section--education {
+  border-top: 1px solid black;
+  font-size: 20px;  
+}
+
+.section--hobbies {
+  border-top: 1px solid black;
+  font-size: 20px;  
+}
+
+ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+  .section--early-life,
+  .section--marine-corps,
+  .section--education,
+  .section--hobbies {
+    width: 75%;
+  }
+  
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
